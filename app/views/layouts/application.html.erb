@@ -12,9 +12,9 @@
   <body>
     <%= yield %>
     <div>
-      <%= link_to 'Books', main_app.books_url %>
-      <%= link_to 'Articles', core.articles_url %>
-      <%= link_to 'Coverages', coverages.coverages_url %>
+      <h3><%= link_to main_app.books_url, main_app.books_url %></h3>
+      <h3><%= link_to core.articles_url, core.articles_url %></h3>
+      <h3><%= link_to coverages.coverages_url, coverages.coverages_url %></h3>
     </div>
   </body>
 </html>
