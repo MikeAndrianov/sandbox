@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sandbox</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+    <div>
+      <%= link_to 'Books', main_app.books_url %>
+      <%= link_to 'Articles', core.articles_url %>
+      <%= link_to 'Coverages', coverages.coverages_url %>
+    </div>
+  </body>
+</html>
