@@ -5,5 +5,6 @@ module Coverages
     # initializer 'coverages.add_middleware' do |app|
     #   app.middleware.use DomainPrefixSetter
     # end
+    middleware.use DomainPrefixSetter
   end
 end

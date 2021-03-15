@@ -5,5 +5,6 @@ module Core
     # initializer 'core.add_middleware' do |app|
     #   app.middleware.use DomainPrefixSetter
     # end
+    middleware.use DomainPrefixSetter
   end
 end
